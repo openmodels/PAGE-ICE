@@ -25,7 +25,7 @@
     w_NonImpactsatCalibrationTemp =Parameter(unit="%GDP", default=0.6333333333333333)
     ipow_NonMarketIncomeFxnExponent =Parameter(unit="unitless", default=0.)
     iben_NonMarketInitialBenefit=Parameter(unit="%GDP/degreeC", default=0.08333333333333333)
-    tcal_CalibrationTemp = Parameter(unit="degreeC", default=3.)
+    tcal_CalibrationTemp = Parameter(default=3.)
     GDP_per_cap_focus_0_FocusRegionEU = Parameter(unit="\$/person", default=34298.93698672955)
     pow_NonMarketExponent = Parameter(unit="", default=2.1666666666666665)
 
