@@ -57,6 +57,7 @@
     rcons_percap_dis = Parameter(index=[time, region], unit="\$/person")
 
     wit_equityweightedimpact = Variable(index=[time, region], unit="\$million")
+    wit_percap_equityweightedimpact = Variable(index=[time, region], unit="\$million")
     widt_equityweightedimpact_discounted = Variable(index=[time, region], unit="\$million")
 
     yagg_periodspan = Parameter(index=[time], unit="year")
@@ -130,7 +131,8 @@
             v.pcdat_partiallyweighted_discountedaggregated[tt, rr] = v.pcdt_partiallyweighted_discounted[tt, rr] * p.yagg_periodspan[tt]
 
             ## Equity weighted impacts (end of page 28, Hope 2009)
-            v.wit_equityweightedimpact[tt, rr] = ((p.cons_percap_consumption_0[1]^p.emuc_utilityconvexity) / (1 - p.emuc_utilityconvexity)) * (p.cons_percap_aftercosts[tt, rr]^(1 - p.emuc_utilityconvexity) - p.rcons_percap_dis[tt, rr]^(1 - p.emuc_utilityconvexity)) * p.pop_population[tt, rr]
+            v.wit_percap_equityweightedimpact[tt, rr] = ((p.cons_percap_consumption_0[1]^p.emuc_utilityconvexity) / (1 - p.emuc_utilityconvexity)) * (p.cons_percap_aftercosts[tt, rr]^(1 - p.emuc_utilityconvexity) - p.rcons_percap_dis[tt, rr]^(1 - p.emuc_utilityconvexity))
+            v.wit_equityweightedimpact[tt, rr] = v.wit_percap_equityweightedimpact[tt, rr] * p.pop_population[tt, rr]
 
             v.widt_equityweightedimpact_discounted[tt, rr] = v.wit_equityweightedimpact[tt, rr] * v.df_utilitydiscountfactor[tt]
 

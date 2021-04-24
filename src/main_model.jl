@@ -273,7 +273,6 @@ function getpage(scenario::String="NDCs", use_permafrost::Bool=true, use_seaice:
 
     buildpage(m, scenario, use_permafrost, use_seaice, use_page09damages)
 
-    # next: add vector and panel example
     initpage(m)
 
     return m
