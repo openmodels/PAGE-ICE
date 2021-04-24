@@ -3,6 +3,10 @@
 [![Build Status](https://travis-ci.org/openmodels/PAGE-ICE.svg?branch=master)](https://travis-ci.org/openmodels/PAGE-ICE)
 [![codecov](https://codecov.io/gh/openmodels/PAGE-ICE/branch/master/graph/badge.svg)](https://codecov.io/gh/openmodels/PAGE-ICE)
 
+| :warning:  This repository is frozen to reflect the published PAGE-ICE model. |
+|-------------------------------------------------------------------------------|
+| It will work with Mimi v. 0.9.3. Further development, including backwards-compatibility, is being done at https://github.com/openmodels/MimiPAGE2020.jl |
+
 PAGE-ICE (Policy Analysis of Greenhouse Effect - Ice, Climate,
 Economics) is a cost-benefit Integrated Assessment Model.  
 This repository contains two versions of the PAGE-ICE, implemented in
