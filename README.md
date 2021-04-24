@@ -5,9 +5,7 @@
 
 | :warning:  This repository is frozen to reflect the published PAGE-ICE model. |
 |-------------------------------------------------------------------------------|
-| It will work with Mimi v. 0.9.3. Further development, including |
-| backwards-compatibility, is being done at |
-| https://github.com/openmodels/MimiPAGE2020.jl |
+| It will work with Mimi v. 0.9.3. Further development, including backwards-compatibility, is being done at https://github.com/openmodels/MimiPAGE2020.jl |
 
 PAGE-ICE (Policy Analysis of Greenhouse Effect - Ice, Climate,
 Economics) is a cost-benefit Integrated Assessment Model.  
